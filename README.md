@@ -18,4 +18,9 @@ A simple weather app that displays the current weather of a city.
 2. Enter a city name in the input field.
 3. Click on the search button to get the weather information for that city.
 
-
+##Future Improvements
+Geolocation: Add an option for users to see the weather based on their current location using the browser’s geolocation API.
+    Multi-City Search: Enable users to search weather for multiple cities at once and display them in a list or table format.
+    Extended Forecast: Show a 7-day forecast, including detailed hourly data such as precipitation, sunrise/sunset times, and UV index.
+    Mobile Responsiveness: Improve the design and layout for a better mobile experience, possibly adding a more modern UI framework such as Bootstrap or Material UI.
+    Error Handling: Improve error messages and provide more detailed feedback if the user enters an invalid city or if the API request fails.
