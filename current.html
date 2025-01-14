@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="current.css">
+    <title>Weather of your city</title>
+</head>
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Enter your city here" spellcheck="true">
+            <button><img src="search.png" alt=""></button>
+        </div>
+        <div class="error">
+            <p>Invalid City Name</p>
+        </div>
+        <p class="timeout-warning" style="display: none;">
+            The server is taking longer than usual to respond. Please wait...</p>
+
+        <div class="weather">
+            <div class="loading">
+                <div class="spinner"></div>
+                <p>Loading...</p>
+            </div>
+            <img src="rain.png" class="weather-icon">
+            <h1 class="temp">22°c</h1>
+            <h2 class="city">New York</h2>
+            <div class="details">
+                <div class="col">
+                    <img src="humidity.png" alt="">
+                    <div>
+                       <p class="humidity">50%</p>
+                       <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="wind.png" alt="">
+                    <div>
+                       <p class="wind">15km</p>
+                       <p>Wind Speed</p>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </div>
+    
+    <div class="history">
+        <h3>Search History</h3>
+        <ul id="history-list"></ul>
+    </div>
+
+    <script src="weather.js">
+        
+    </script>
+    
+</body>
+</html>
