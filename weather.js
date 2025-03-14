@@ -14,7 +14,7 @@ const apiKey = "833d9a9d9c6e0f89200ad578c553afb2";
         timeoutWarning.textContent = "The server is taking longer than expected. Please wait...";
         timeoutWarning.style.display = "none";
         document.body.appendChild(timeoutWarning);
-    
+   
         function updateHistory(city) {
             let history = JSON.parse(localStorage.getItem("cityHistory")) || [];
             if (!history.includes(city)) {
@@ -90,6 +90,12 @@ const apiKey = "833d9a9d9c6e0f89200ad578c553afb2";
                 loadingSpinner.style.display = "none";
                 timeoutWarning.style.display = "none";
             }
+        }
+        function showList(){
+            if(historyList.style.display === "none")   
+            historyList.style.display = "block";
+        else
+            historyList.style.display="none";
         }
     
         searchBtn.addEventListener("click", () => {
